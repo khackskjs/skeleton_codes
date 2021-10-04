@@ -1,0 +1,25 @@
+{
+  "name": "sequelize-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:db-user-create": "cross-env NODE_ENV=local node test-db.js",
+    "setting:db-create": "cross-env NODE_ENV=local node src/db/initialize.js",
+    "start": "cross-env NODE_ENV=local node index.js",
+    "db:migrate": "sequelize db:migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mariadb": "^2.5.4",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "@types/sequelize": "^4.28.10",
+    "cross-env": "^7.0.3"
+  }
+}
