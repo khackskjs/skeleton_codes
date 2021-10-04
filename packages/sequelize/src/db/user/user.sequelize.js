@@ -1,6 +1,4 @@
-const db = require('../models')
-
-class User {
+module.exports = class User {
   constructor(user) {
     console.log('USER constructor', user)
     this._user = user
@@ -16,6 +14,3 @@ class User {
     })
   }
 }
-
-
-module.exports = new User(db.User)
